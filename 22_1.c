@@ -15,8 +15,12 @@ int main(int argc, char* argv[])
 	
 	printf("My rank %d of %d\n", rank, size );
 	printf("Here are my values for A\n"); 
-	for (i=0; i<10; i++) 
+	for (i=0; i<10; i++)
+	{
+		printf("My rank %d of %d\n", rank, size );
 		printf("%f ", A[i]);
+
+	} 
  	
 	printf("\n");
  	MPI_Finalize(); 
